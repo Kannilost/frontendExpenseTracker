@@ -1,0 +1,42 @@
+<div>
+    <br>
+</div>
+
+<h1 class="title">Dashboard</h1>
+
+<div class="numbercontainer">
+    <button mat-button class="big-button">
+        Monthly Expenses <br>
+        <small>$2500</small>
+    </button>
+    <button mat-button class="big-button">
+        Monthly Bugdet <br>
+        <small>$3000</small>
+    </button>
+    <button mat-button class="big-button">
+        Saldo <br>
+        <small>$500</small>
+    </button>
+</div>
+
+<div class="linchartcontainer">
+  <div class="linchartcontainer-left">
+    <canvas class="linechart" baseChart
+      [data]="chartData"
+      [options]="chartOptions"
+      [type]="'line'">
+    </canvas>
+  </div> <!-- linchartcontainer-left korrekt geschlossen -->
+
+  <div class="linechartcontainer-right">
+    <h1>Hier werden paar Bankkonten angezeigt</h1>
+  </div>
+</div>
+
+<hr style="margin: 40px 0;">
+
+<canvas baseChart
+  [data]="pieChartData"
+  [options]="pieChartOptions"
+  [type]="'pie'">
+</canvas>

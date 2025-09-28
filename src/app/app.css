@@ -1,0 +1,55 @@
+.example-spacer { 
+    flex: 1; 
+    font-weight: bold;
+}
+
+.mat-toolbar {
+    background-color: rgb(48, 61, 97);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    a {
+  color: #ffffff; 
+  text-decoration: none; /* Optional: removes underline */
+}
+}
+
+.settings-button {
+  color: #b3b3b3; /* z. B. deine Hintergrundfarbe */
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.sidenav-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.sidenav-drawer {
+  background-color: rgb(32, 45, 87);
+  width: 400px;
+  z-index: 500;
+}
+
+
+.big-button {
+  padding: 12px 24px;
+  font-size: 20px;
+  margin-top: 2rem;
+  color: #d3d3d3 !important;
+}
+
+.button-container {
+  min-width: 100%;
+  display: fixed;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  position: fixed;
+  min-width: 100%;
+}
+
+.selected {
+  background-color: #3f51b5;   /* oder deine Wunschfarbe */
+  color: white;
+}
